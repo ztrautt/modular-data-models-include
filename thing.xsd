@@ -15,7 +15,7 @@
             <xsd:element maxOccurs="unbounded" minOccurs="0" name="altName" type="xsd:string">
                 <xsd:annotation>
                     <xsd:appinfo>
-                        <label>Alternate Name (e.g. acronym, nickname)</label>
+                        <label>Alternate Name</label>
                     </xsd:appinfo>
                 </xsd:annotation>
             </xsd:element>
