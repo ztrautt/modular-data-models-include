@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified"
-    elementFormDefault="unqualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified">
 
     <xsd:complexType name="citation-type">
         <xsd:sequence>
@@ -37,8 +36,7 @@
                         <xsd:element minOccurs="0" name="given-name" type="xsd:string"/>
                         <xsd:element minOccurs="0" name="surname" type="xsd:string"/>
                         <xsd:element minOccurs="0" name="suffix" type="xsd:string"/>
-                        <xsd:element maxOccurs="unbounded" minOccurs="0" name="affiliation"
-                            type="xsd:string"/>
+                        <xsd:element maxOccurs="unbounded" minOccurs="0" name="affiliation" type="xsd:string"/>
                         <xsd:element minOccurs="0" name="ORCID" type="xsd:string"/>
 
                     </xsd:sequence>
@@ -48,9 +46,9 @@
             <xsd:element minOccurs="0" name="publication-date">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element minOccurs="0" name="year" type="xsd:gYear"/>
-                        <xsd:element minOccurs="0" name="month" type="xsd:gMonth"/>
-                        <xsd:element minOccurs="0" name="day" type="xsd:gDay"/>
+                        <xsd:element minOccurs="0" name="year" type="xsd:int"/>
+                        <xsd:element minOccurs="0" name="month" type="xsd:int"/>
+                        <xsd:element minOccurs="0" name="day" type="xsd:int"/>
                     </xsd:sequence>
                 </xsd:complexType>
             </xsd:element>
